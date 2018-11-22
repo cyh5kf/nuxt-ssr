@@ -66,6 +66,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['axios'],
     babel: {        //配置按需引入规则
       "plugins":[
           [
