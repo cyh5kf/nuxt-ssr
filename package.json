@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-ssr",
+  "version": "1.0.0",
+  "description": "My well-made Nuxt.js project",
+  "author": "chenyu",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build && npm start",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "pm2Build": "nuxt build && npm run pm2Start",
+    "pm2Start": "cross-env NODE_ENV=production pm2 start --name  'nuxt-ssr' server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "koa": "^2.5.2",
+    "element-ui": "^2.4.6",
+    "@nuxtjs/axios": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^1.1.1",
+    "nodemon": "^1.11.0"
+  }
+}
