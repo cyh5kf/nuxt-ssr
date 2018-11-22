@@ -1,4 +1,4 @@
-# nuxtDemo
+# nuxt ssr
 
 > My well-made Nuxt.js project
 
